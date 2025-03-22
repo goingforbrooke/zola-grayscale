@@ -91,6 +91,29 @@
     <!-- Projects-->
     <section class="projects-section bg-light" id="{% block projects_id %}projects{% endblock projects_id %}">
         <div class="container px-4 px-lg-5">
+            {% block feature_why_it_matters %}
+            <!-- Featured Project Row -->
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-4 col-lg-5">
+                    {% block why_it_matters_content %}
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>{% block why_it_matters_title %}Shoreline{% endblock why_it_matters_title %}</h4>
+                        <p class="text-black-50 mb-0">
+                            {% block why_it_matters_description %}
+                            {{ config.title }} is open source and MIT licensed. This means you can use it for any project
+                            - even commercial projects! Download it, customize it, and publish your website!
+                            {% endblock why_it_matters_description %}
+                        </p>
+                    </div>
+                    {% endblock why_it_matters_content %}
+                </div>
+                <div class="col-xl-8 col-lg-7">
+                    {% block why_it_matters_thumbnail %}
+                    <img class="img-fluid mb-3 mb-lg-0" src="{{ get_url(path="assets/img/bg-masthead.jpg") }}" alt="...">
+                    {% endblock why_it_matters_thumbnail %}
+                </div>
+            </div>
+            {% endblock feature_why_it_matters %}
             {% block feature_project %}
             <!-- Featured Project Row -->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">

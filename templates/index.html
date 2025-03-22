@@ -188,6 +188,32 @@
                 </div>
             </div>
             {% endblock project_2 %}
+            {% block project_3 %}
+            <!-- Project One Row -->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    {% block project_3_thumbnail %}
+                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-01.jpg") }}" alt="...">
+                    {% endblock project_3_thumbnail %}
+                </div>
+                <div class="col-lg-6">
+                    {% block project_3_content %}
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">{% block project_3_title %}Misty{% endblock project_3_title %}</h4>
+                                <p class="mb-0 text-white-50">
+                                    {% block project_3_description %}
+                                    An example of where you can put an image of a project, or anything else, along with a description.
+                                    {% endblock project_3_description %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock project_3_content %}
+                </div>
+            </div>
+            {% endblock project_3 %}
             {% block extra_projects %}{% endblock extra_projects %}
         </div>
     </section>

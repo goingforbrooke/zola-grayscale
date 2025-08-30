@@ -136,6 +136,31 @@
                 </div>
             </div>
             {% endblock feature_project %}
+            {% block project_0 %}
+            <!-- Project Zero Row -->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    {% block project_0_thumbnail %}
+                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-02.jpg") }}" alt="...">
+                    {% endblock project_0_thumbnail %}
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    {% block project_0_content %}
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">{% block project_0_title %}Mountains{% endblock project_0_title %}</h4>
+                                <p class="mb-0 text-white-50">
+                                    {% block project_0_description %}
+                                    Another example of a project with its respective description. These sections work well responsively as well!
+                                    {% endblock project_0_description %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock project_0_content %}
+                </div>
+            </div>
+            {% endblock project_0 %}
             {% block project_1 %}
             <!-- Project One Row -->
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
